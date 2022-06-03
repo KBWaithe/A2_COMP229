@@ -1,18 +1,34 @@
 <!-- Main Navigation -->
+
+<!-- Test Navigation bar for Logo + Text 
+
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/public/Assets/images/Logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+      Express Portfolio
+    </a>
+  </div>
+</nav> 
+-->
+
+<!-- Main Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">Express Portfolio</a>
-    <!-- <img src="/public/Assets/images/Logo.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top"> --> 
-    <!-- Neither PNG or JPG work for the logo? BS5 issue perhaps -->
+    <img src="/public/Assets/images/Logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
+  
 
     <!-- Collapsable Hamburger for Mobile-->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> 
           
-          <!-- Testing Nav Active in Bootstrap 5 -->            
+          <!-- Testing Nav Active in Bootstrap 5 -->
+            
           <% if (title == "Home") { %>
             <li class="nav-item active">
           <% } else  { %>  

@@ -1,0 +1,41 @@
+/* 
+File Name: Index.js
+Student Name: Kristian Waithe
+Student ID: 300637474
+Date: 03/06/2022
+*/
+
+let express = require('express');
+let router = express.Router();
+
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Home'});
+});
+
+/* GET home page. */
+router.get('/home', function(req, res, next) {
+  res.render('index', { title: 'Home'});
+});
+
+/* GET About Us page. */
+router.get('/about', function(req, res, next) {
+  res.render('index', { title: 'About'});
+});
+
+/* GET Projects page. */
+router.get('/projects', function(req, res, next) {
+  res.render('index', { title: 'Projects'});
+});
+
+/* GET Services page. */
+router.get('/services', function(req, res, next) {
+  res.render('index', { title: 'Services'});
+});
+
+/* GET Contact Us page. */
+router.get('/contact', function(req, res, next) {
+  res.render('contact_me', { title: 'Contact'});
+});
+
+module.exports = router;
